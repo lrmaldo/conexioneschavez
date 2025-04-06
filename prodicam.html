@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonio Prodicam - Conexiones Chávez</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .fade-in {
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .bg-image {
+      background-image: url('https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/482302451_962615122728824_4557501094215340720_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeH5aIf9cH0wRt7VQoW27-VCAAp8M2cM2BYACnwzZwzYFk0jX9-xlmT_pfwrPFxvkp44fuwGkbmL4V8VVhnsGUuu&_nc_ohc=tQq7r_i_sz0Q7kNvgE-bd1C&_nc_oc=AdlvarZ4DgG0tQKthIIyeHoy_VuZa7YBwC68erAWyl6VVYCp0ucw9J9wMVSUkxYSqyw&_nc_zt=23&_nc_ht=scontent-dfw5-2.xx&_nc_gid=uEIVSfDExwcWI0VoOeC2rA&oh=00_AYEKtr3Q6nrXFLq_jfzpF3xgcGqJXZ8lsKLvUhcVaoekHg&oe=67F4698C');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .section-divider {
+      height: 3px;
+      background: linear-gradient(90deg, rgba(250,204,21,0.01) 0%, rgba(250,204,21,0.8) 50%, rgba(250,204,21,0.01) 100%);
+      margin: 2rem auto;
+      width: 80%;
+    }
+    .bg-industrial-gradient {
+      background: linear-gradient(to right, #111 0%, #111 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .bg-industrial-gradient::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(to right, #facc15 0%, #eab308 100%);
+    }
+    .industrial-card {
+      position: relative;
+      overflow: hidden;
+    }
+    .industrial-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background-color: #facc15;
+    }
+    .logo-container {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background-color: #facc15;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #000;
+      transition: all 0.3s ease;
+    }
+    .logo-container:hover {
+      transform: scale(1.05);
+    }
+    .quote-container {
+      position: relative;
+    }
+    .quote-mark {
+      position: absolute;
+      font-size: 8rem;
+      opacity: 0.1;
+      top: -2rem;
+      left: -2rem;
+      color: #facc15;
+    }
+    .highlight-text {
+      position: relative;
+      display: inline-block;
+    }
+    .highlight-text::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background-color: rgba(250, 204, 21, 0.3);
+      z-index: -1;
+    }
+    .image-grid img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .image-grid img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-image antialiased">
+  <div class="min-h-screen bg-gradient-to-b from-black/90 to-black/80">
+    <!-- Navegación -->
+    <nav class="bg-black border-b border-yellow-500 text-white py-3 shadow-lg fixed w-full z-50">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+          <!-- Logo placeholder -->
+          <div class="logo-container">
+            <span>CC</span>
+          </div>
+          <span class="font-bold text-xl md:text-2xl">Conexiones Chávez</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html#inicio" class="hover:text-yellow-400 transition-colors font-medium">Inicio</a>
+          <a href="index.html#quienes-somos" class="hover:text-yellow-400 transition-colors font-medium">Quiénes Somos</a>
+          <a href="index.html#productos" class="hover:text-yellow-400 transition-colors font-medium">Productos</a>
+          <a href="index.html#testimonios" class="hover:text-yellow-400 transition-colors font-medium">Testimonios</a>
+          <a href="index.html#proveedores" class="hover:text-yellow-400 transition-colors font-medium">Proveedores</a>
+          <a href="index.html#contacto" class="hover:text-yellow-400 transition-colors font-medium">Contacto</a>
+        </div>
+        <button class="md:hidden">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Cabecera del Testimonio -->
+    <section class="pt-28 pb-20 px-4">
+      <div class="container mx-auto text-center">
+        <a href="index.html#testimonios" class="inline-block text-yellow-400 mb-8 hover:text-yellow-300 transition-colors">
+          <i class="fas fa-arrow-left mr-2"></i> Volver a testimonios
+        </a>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight" data-aos="fade-down" data-aos-duration="1000">Testimonio de Cliente</h1>
+        <div class="flex items-center justify-center mb-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="w-20 h-20 bg-white rounded-lg shadow-lg flex items-center justify-center mr-4 p-1 border-2 border-yellow-400">
+            <img src="/img/Prodicam.png" alt="Prodicam logo" class="w-full h-full object-contain">
+          </div>
+          <div class="text-left">
+            <h2 class="font-bold text-2xl text-white">Pablo Casanova Barón</h2>
+            <p class="text-yellow-400">Prodicam - Industria Azucarera</p>
+          </div>
+        </div>
+        <div class="flex justify-center mb-10">
+          <img src="/img/prodicam1.jpeg" alt="Maquinaria Industrial Prodicam" class="rounded-lg shadow-2xl w-full max-w-4xl object-cover h-64 md:h-96" data-aos="zoom-in" data-aos-duration="1200">
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Testimonio Completo -->
+    <section class="py-16 px-4">
+      <div class="container mx-auto">
+        <div class="flex justify-center mb-10" data-aos="zoom-in" data-aos-duration="800">
+          <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-6 border-l-4 border-yellow-500">
+            <div class="w-24 h-24 flex-shrink-0">
+              <img src="/img/Prodicam.png" alt="Prodicam logo" class="w-full h-full object-contain">
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800">Prodicam</h3>
+              <p class="text-gray-600">Empresa del sector agrícola azucarero</p>
+              <p class="mt-2 text-sm text-gray-500">Especialistas en maquinaria para ingenios desde 2018</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white/95 rounded-xl shadow-2xl overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+          <div class="p-10 md:p-16 quote-container">
+            <div class="quote-mark">"</div>
+            <h2 class="text-3xl font-bold mb-8 text-gray-800">Una experiencia excepcional con Conexiones Chávez</h2>
+            
+            <div class="text-lg text-gray-700 space-y-6 leading-relaxed">
+              <p>
+                "En 2018 llegué a la ciudad de Tuxtepec con la empresa Prodicam al área de maquinaria de cosecha e inicié la búsqueda de proveedores de refacciones, aceites, mangueras y herramientas. En ese tiempo no conocía Tuxtepec, por lo que un operador de alzadora me recomendó ir con "Chávez" para conseguir refacciones hidráulicas.
+              </p>
+              
+              <p>
+                Al llegar, me atendió Don Manuel personalmente. De inmediato me mostró las diferentes conexiones, mangueras y adaptadores que tenía disponibles. Lo que más me impresionó fue su amplio conocimiento técnico y la forma en que resolvió mi problema en minutos cuando otros proveedores me habían dicho que necesitaría esperar días por las piezas.
+              </p>
+              
+              <p>
+                Durante la zafra 2019-2020, tuvimos una emergencia crítica cuando una de nuestras máquinas cosechadoras principales sufrió una ruptura en el sistema hidráulico. Esto podría habernos costado días de producción y pérdidas significativas. Llamé a Don Manuel a las 9 de la noche explicándole la situación, y <span class="highlight-text">para mi sorpresa, abrió su taller especialmente para atendernos</span>. No solo tenía las piezas necesarias sino que nos ayudó con la instalación.
+              </p>
+              
+              <p>
+                Desde entonces, Conexiones Chávez se ha convertido en nuestro proveedor principal para todo lo relacionado con sistemas hidráulicos y neumáticos. Han equipado nuestras 8 cosechadoras y 12 alzadoras con mangueras de alta presión, conexiones especializadas y han brindado mantenimiento preventivo que ha reducido nuestros tiempos de inactividad en un 40%.
+              </p>
+              
+              <p>
+                Lo que hace diferente a Conexiones Chávez es su compromiso con el cliente y su conocimiento especializado del sector. No solo venden productos, ofrecen soluciones completas adaptadas a las necesidades específicas de cada cliente. Su personal está altamente capacitado y siempre dispuesto a ir más allá para resolver problemas urgentes.
+              </p>
+              
+              <p>
+                Recomiendo ampliamente sus servicios a cualquier empresa que dependa de sistemas hidráulicos para su operación diaria. Son confiables, eficientes y verdaderos expertos en su campo."
+              </p>
+            </div>
+            
+            <div class="mt-10 flex justify-end">
+              <div class="flex items-center">
+                <div class="w-16 h-16 bg-white rounded-lg shadow-lg flex items-center justify-center mr-4 p-1 border-2 border-yellow-400">
+                  <img src="/img/Prodicam.png" alt="Prodicam logo" class="w-full h-full object-contain">
+                </div>
+                <div class="text-right">
+                  <p class="font-bold text-black text-xl">Pablo Casanova Barón</p>
+                  <p class="text-gray-600">Gerente de Operaciones</p>
+                  <p class="text-gray-600">Prodicam - Industria Azucarera</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Galería de Imágenes -->
+    <section class="py-16 px-4">
+      <div class="container mx-auto">
+        <div class="text-center mb-12" data-aos="fade-down" data-aos-duration="800">
+          <h2 class="text-3xl font-bold text-white mb-4">Proyectos con Prodicam</h2>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto">Soluciones hidráulicas para maquinaria de ingenio azucarero</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 image-grid">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <img src="https://images.unsplash.com/photo-1570841398833-43e352b440ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Maquinaria agrícola" class="rounded-lg shadow-lg w-full h-64 object-cover">
+            <p class="text-center text-gray-300 mt-2">Sistema hidráulico para cosechadora de caña</p>
+          </div>
+          
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <img src="/img/prodicam2.jpeg" alt="Conexiones hidráulicas Prodicam" class="rounded-lg shadow-lg w-full h-64 object-cover">
+            <p class="text-center text-gray-300 mt-2">Conexiones para maquinaria azucarera</p>
+          </div>
+          
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <img src="/img/prodicam3.jpeg" alt="Instalaciones Prodicam" class="rounded-lg shadow-lg w-full h-64 object-cover">
+            <p class="text-center text-gray-300 mt-2">Mangueras para transporte de melaza</p>
+          </div>
+          
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <img src="https://images.unsplash.com/photo-1510154328089-bdd27fc4ff1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mangueras industriales" class="rounded-lg shadow-lg w-full h-64 object-cover">
+            <p class="text-center text-gray-300 mt-2">Mangueras especializadas</p>
+          </div>
+          
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <img src="https://images.unsplash.com/photo-1580901368919-7738efb0f87e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cosechadora" class="rounded-lg shadow-lg w-full h-64 object-cover">
+            <p class="text-center text-gray-300 mt-2">Cosechadora en operación</p>
+          </div>
+          
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+            <img src="https://images.unsplash.com/photo-1565348284262-666aecb5762e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Sistema neumático" class="rounded-lg shadow-lg w-full h-64 object-cover">
+            <p class="text-center text-gray-300 mt-2">Sistema neumático instalado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Llamado a la acción -->
+    <section class="py-16 px-4">
+      <div class="container mx-auto">
+        <div class="bg-industrial-gradient rounded-xl shadow-xl p-10 md:p-16 text-center" data-aos="zoom-in" data-aos-duration="1000">
+          <h2 class="text-3xl font-bold text-white mb-6">¿Trabaja en el sector agrícola o azucarero?</h2>
+          <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Al igual que con Prodicam, podemos ofrecerle soluciones personalizadas para mantener su maquinaria agrícola y de procesamiento funcionando sin interrupciones</p>
+          <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="index.html#contacto" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-lg shadow-lg transition-all transform hover:scale-105">
+              Contáctenos Ahora
+            </a>
+            <a href="index.html#productos" class="bg-transparent border-2 border-yellow-500 text-yellow-400 hover:bg-yellow-500/10 font-bold py-3 px-8 rounded-lg shadow-lg transition-all">
+              Ver Productos
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-black border-t border-yellow-500 text-white py-10">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0 flex items-center">
+            <div class="logo-container mr-4 w-12 h-12">
+              <span>CC</span>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold mb-2">Conexiones, Bandas y Mangueras Chávez</h2>
+              <p class="text-yellow-200">Soluciones de calidad para la industria desde 2008</p>
+            </div>
+          </div>
+          <div class="text-center md:text-right">
+            <p class="text-gray-400">&copy; 2025 Conexiones Chávez. Todos los derechos reservados.</p>
+            <p class="text-sm text-gray-500 mt-1">Diseñado para brindar soluciones industriales de <span class="text-yellow-400">alta calidad</span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <!-- Scripts adicionales para FontAwesome y AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Inicialización de AOS
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        once: false,
+        mirror: true,
+        offset: 120,
+        easing: 'ease-in-out'
+      });
+      
+      // Scroll suave para los enlaces internos
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
